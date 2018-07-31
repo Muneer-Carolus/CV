@@ -1,0 +1,60 @@
+// importing fonts
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
+// styling for academic page
+#acc{
+    background-image: url("../images/man.jpeg");
+    background-size: cover;
+    // background-position: center;
+    background-repeat: no-repeat;
+    color: #C9FBFF;
+    // font-family: 'Merienda', cursive;
+    h1,h2{
+        text-align: center;
+        color: white;
+        font-family: 'Merienda', cursive;
+        font-size: 50px;
+        text-decoration: underline;
+    }
+}
+.grid{
+    ul{
+        list-style-type: none;
+    }
+}
+
+.tertiary{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(auto);
+    grid-gap: 30px;
+    .college{
+        grid-column: 1/1;
+        grid-row: 1/2;
+        padding: 5px;
+        // background-color: red;
+    }
+    .code{
+        grid-column: 2/2;
+        grid-row: 1/2;
+        padding: 5px;
+        // background-color: blue;
+    }
+}
+.secondary{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    grid-template-rows: repeat(auto);
+    grid-gap: 2px;
+    .heading2{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .school{
+        grid-column: 1/1;
+        grid-row: 2/3;
+        // background-color: yellow;
+    }
+}
+
+

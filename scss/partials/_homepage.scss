@@ -1,0 +1,28 @@
+// importing fonts
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+// styling for table
+
+.maintable{
+    border: solid 5px; 
+    h1{
+        font-family: 'Merienda', cursive;
+        color:white;
+    }   
+    table{
+        padding: 5px; 
+           
+        td{
+            color:#C9FBFF;
+            padding: 20px;
+            font-family: 'Merienda', cursive;
+            // border: solid 5px; 
+        }
+    }
+}
+#personal{
+    background-image: url("../images/moon.jpeg");
+    background-size: cover;
+    // background-position: center;
+    background-repeat: no-repeat;
+}
+

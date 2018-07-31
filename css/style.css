@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css?family=Merienda");
+@import url("https://fonts.googleapis.com/css?family=Merienda");
+@import url("https://fonts.googleapis.com/css?family=Merienda");
+@import url("https://fonts.googleapis.com/css?family=Merienda");
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif|Merienda");
+.maintable {
+  border: solid 5px; }
+  .maintable h1 {
+    font-family: 'Merienda', cursive;
+    color: white; }
+  .maintable table {
+    padding: 5px; }
+    .maintable table td {
+      color: #C9FBFF;
+      padding: 20px;
+      font-family: 'Merienda', cursive; }
+
+#personal {
+  background-image: url("../images/moon.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+#acc {
+  background-image: url("../images/man.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #C9FBFF; }
+  #acc h1, #acc h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Merienda', cursive;
+    font-size: 50px;
+    text-decoration: underline; }
+
+.grid ul {
+  list-style-type: none; }
+
+.tertiary {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(auto);
+  grid-gap: 30px; }
+  .tertiary .college {
+    grid-column: 1/1;
+    grid-row: 1/2;
+    padding: 5px; }
+  .tertiary .code {
+    grid-column: 2/2;
+    grid-row: 1/2;
+    padding: 5px; }
+
+.secondary {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(auto);
+  grid-gap: 2px; }
+  .secondary .heading2 {
+    grid-column: 1/2;
+    grid-row: 1/2; }
+  .secondary .school {
+    grid-column: 1/1;
+    grid-row: 2/3; }
+
+#work {
+  background-image: url("../images/sky.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; }
+  #work h1 {
+    text-align: center;
+    font-size: 30px; }
+
+.reference {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(auto);
+  grid-gap: 5px;
+  padding: 10px; }
+  .reference .heading {
+    grid-column: 1/4;
+    grid-row: 1/2; }
+  .reference .ref1 {
+    grid-column: 1/1;
+    grid-row: 2/3; }
+  .reference .ref2 {
+    grid-column: 2/2;
+    grid-row: 2/3; }
+  .reference .ref3 {
+    grid-column: 3/3;
+    grid-row: 2/3; }
+
+.projects {
+  background-image: url("../images/project_background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto);
+  grid-gap: 10px;
+  padding: 10px; }
+  .projects .heading {
+    grid-column: 1/5;
+    grid-row: 1/2; }
+  .projects .outdoor {
+    grid-column: 2/2;
+    grid-row: 2/3;
+    padding: 10px; }
+  .projects .code4ct {
+    grid-column: 3/3;
+    grid-row: 2/3;
+    padding: 10px; }
+  .projects h1, .projects h2 {
+    text-align: center;
+    font-family: 'Merienda', cursive;
+    color: white; }
+  .projects button {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background-color: transparent; }
+    .projects button:hover {
+      background-color: black;
+      color: white;
+      box-shadow: 10px 10px #C9FBFF; }
+  .projects img {
+    border: solid 2px black; }
+    .projects img:hover {
+      width: 300px;
+      height: 300px;
+      background: red;
+      -webkit-transition: width 2s;
+      -webkit-transition: height 2s;
+      transition: width 2s; }
+
+.navbar {
+  background-color: #000000b0;
+  padding: 30px;
+  border-radius: 5px; }
+  .navbar a {
+    padding: 60px;
+    color: white;
+    font-family: 'Merienda', cursive;
+    font-size: 20px;
+    text-decoration: none; }
+    .navbar a:hover {
+      color: yellow; }
+
+.footer {
+  background-color: #000000b0;
+  color: white;
+  padding: 10px;
+  font-family: 'Merienda', cursive;
+  border-radius: 5px; }
+
+#home {
+  background-image: url("../images/sky.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  #home .cover h1 {
+    color: white;
+    font-size: 50px;
+    font-family: 'Merienda', cursive; }
+  #home .cover h2 {
+    color: #C9FBFF;
+    font-family: 'Bree Serif', serif;
+    font-size: 30px; }
+  #home .cover img {
+    border: solid black 2px;
+    border-radius: 5px; }
+    #home .cover img:hover {
+      box-shadow: 15px 5px 10px #C9FBFF; }
+
+/* for mobile view */
+@media only screen and (min-device-width: 1px) and (max-device-width: 640px) {
+  .navbar {
+    border-radius: 5px; }
+    .navbar a {
+      color: white;
+      font-family: 'Merienda', cursive;
+      text-decoration: none; }
+      .navbar a:hover {
+        color: yellow; } }
+
+/*# sourceMappingURL=style.css.map */
