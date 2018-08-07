@@ -51,18 +51,13 @@
             font-family: 'Merienda', cursive;
         }
         h2{
-            color: #C9FBFF;
-            font-family: 'Bree Serif', serif;
+            color: white;
+            font-family: 'Merienda', cursive;
             font-size: 30px;
         }
         img{
             border: solid black 2px;
             border-radius: 5px;
-            
-            &:hover{
-                box-shadow: 15px 5px 10px #C9FBFF;
-            }
-            
         }
     }
 }

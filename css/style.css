@@ -29,8 +29,7 @@
     text-align: center;
     color: white;
     font-family: 'Merienda', cursive;
-    font-size: 50px;
-    text-decoration: underline; }
+    font-size: 50px; }
 
 .grid ul {
   list-style-type: none; }
@@ -69,7 +68,8 @@
   color: white; }
   #work h1 {
     text-align: center;
-    font-size: 30px; }
+    font-size: 30px;
+    font-family: 'Merienda', cursive; }
 
 .reference {
   display: grid;
@@ -90,11 +90,13 @@
     grid-column: 3/3;
     grid-row: 2/3; }
 
-.projects {
-  background-image: url("../images/project_background.jpg");
+.proj {
+  background-image: url("../images/sky.jpeg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; }
+
+.projects {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(auto);
@@ -111,6 +113,9 @@
     grid-column: 3/3;
     grid-row: 2/3;
     padding: 10px; }
+  .projects .blog {
+    grid-column: 2/4;
+    grid-row: 4/5; }
   .projects h1, .projects h2 {
     text-align: center;
     font-family: 'Merienda', cursive;
@@ -119,17 +124,14 @@
     text-decoration: none;
     color: black;
     padding: 10px;
-    background-color: transparent; }
-    .projects button:hover {
-      background-color: black;
-      color: white;
-      box-shadow: 10px 10px #C9FBFF; }
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer; }
   .projects img {
     border: solid 2px black; }
     .projects img:hover {
       width: 300px;
       height: 300px;
-      background: red;
       -webkit-transition: width 2s;
       -webkit-transition: height 2s;
       transition: width 2s; }
@@ -164,14 +166,12 @@
     font-size: 50px;
     font-family: 'Merienda', cursive; }
   #home .cover h2 {
-    color: #C9FBFF;
-    font-family: 'Bree Serif', serif;
+    color: white;
+    font-family: 'Merienda', cursive;
     font-size: 30px; }
   #home .cover img {
     border: solid black 2px;
     border-radius: 5px; }
-    #home .cover img:hover {
-      box-shadow: 15px 5px 10px #C9FBFF; }
 
 /* for mobile view */
 @media only screen and (min-device-width: 1px) and (max-device-width: 640px) {
