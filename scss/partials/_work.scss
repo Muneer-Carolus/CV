@@ -14,6 +14,17 @@
         font-size: 30px;
         font-family: 'Merienda', cursive;
     }
+    h2{
+        text-align: center;
+      
+        font-family: 'Merienda', cursive; 
+    }
+}
+.exp{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(auto);
+    grid-gap: 5px;
 }
 // layout for work experience page
 .reference{

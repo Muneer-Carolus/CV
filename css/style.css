@@ -70,6 +70,15 @@
     text-align: center;
     font-size: 30px;
     font-family: 'Merienda', cursive; }
+  #work h2 {
+    text-align: center;
+    font-family: 'Merienda', cursive; }
+
+.exp {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(auto);
+  grid-gap: 5px; }
 
 .reference {
   display: grid;
