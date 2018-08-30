@@ -4,25 +4,70 @@
 
 .maintable{
     border: solid 5px; 
+    width: 100%;
+    
     h1{
         font-family: 'Merienda', cursive;
         color:white;
     }   
     table{
-        padding: 5px; 
-           
+        padding: 5px;     
         td{
             color:#C9FBFF;
             padding: 20px;
             font-family: 'Merienda', cursive;
-            // border: solid 5px; 
+        
         }
     }
 }
 #personal{
     background-image: url("../images/moon.jpeg");
     background-size: cover;
-    // background-position: center;
     background-repeat: no-repeat;
+}
+input{
+    display: none;
+}
+
+
+// responsiveness
+/* for mobile view */
+@media only screen and (min-device-width:1px) and (max-device-width:640px){
+    .navbar{
+        background-color: none;
+        label {
+            color: white;
+        }
+    }
+    .menu{
+        display: none; 
+        position: absolute;
+        width: 35%; 
+        a {
+          padding: 30px;
+          text-decoration: none;
+          color: white;
+          background-color: rgba(0, 0, 0, 0.51);
+          width: 100%;
+          display: block;
+          text-align: center;
+          clear: right;
+        }
+      }
+      #toggle {
+        display: none;
+      }
+      #toggle:checked + .menu {
+        display: block;
+      }  
+      #personal{
+        background-image: url("../images/moon.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }  
+    td{
+        font-size: 12px;
+    }
 }
 

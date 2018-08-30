@@ -39,9 +39,7 @@
         font-family: 'Merienda', cursive;
         color:white;
     }
-    // p{
-    //     font-family
-    // }
+
     // styling anche tags
     button{
         text-decoration: none;
@@ -52,16 +50,43 @@
         cursor: pointer;
     }
     // styling for img
-    img{
-        border:solid 2px black;
-        &:hover{
-            width: 300px;
-            height: 300px;
-            // background: red;
-            -webkit-transition: width 2s; 
-            -webkit-transition: height 2s; 
-            transition: width 2s;
+
+}
+// responsiveness
+/* for mobile view */
+@media only screen and (min-device-width:1px) and (max-device-width:640px){
+    .navbar{
+        background-color: none;
+        label {
+            color: white;    
         }
     }
-
+    .menu{
+        display: none; 
+        position: absolute;
+        width: 35%; 
+        a {
+            padding: 30px;
+          text-decoration: none;
+          color: white;
+          background-color: rgba(0, 0, 0, 0.51);
+          width: 100%;
+          display: block;
+          text-align: center;
+          clear: right;
+        }
+      }
+      #toggle {
+        display: none;
+      }
+      #toggle:checked + .menu {
+        display: block;
+      }    
+        img{
+            width: 50%;
+            // height: 100px;
+        }
+        .projects{
+            display: inline;
+        }
 }

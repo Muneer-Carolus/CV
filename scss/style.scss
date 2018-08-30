@@ -60,25 +60,47 @@
             border-radius: 5px;
         }
     }
+    input{
+        display: none;
+    }
+
 }
+
+
 
 // responsiveness
 /* for mobile view */
 @media only screen and (min-device-width:1px) and (max-device-width:640px){
     .navbar{
-        // background-color: #000000b0;
-        // padding: 30px;
-        border-radius: 5px;
-    
-        a{
-            // padding: 60px;
-            color: white;
-            font-family: 'Merienda', cursive;
-            // font-size: 20px;
-            text-decoration: none;
-            &:hover{
-                color: yellow;
-            }
+        background-color: none;
+        label {
+            color: white;    
+        }
+    }
+    .menu{
+        display: none; 
+        position: absolute;
+        width: 35%; 
+        a {
+            padding: 30px;
+          text-decoration: none;
+          color: white;
+          background-color: rgba(0, 0, 0, 0.51);
+          width: 100%;
+          display: block;
+          text-align: center;
+          clear: right;
+        }
+      }
+      #toggle {
+        display: none;
+      }
+      #toggle:checked + .menu {
+        display: block;
+      }    
+    .cover{
+        img{
+            width: 50%;
         }
     }
 }

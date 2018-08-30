@@ -5,15 +5,13 @@
 #acc{
     background-image: url("../images/man.jpeg");
     background-size: cover;
-    // background-position: center;
     background-repeat: no-repeat;
     color: #C9FBFF;
-    // font-family: 'Merienda', cursive;
     h1,h2{
         text-align: center;
         color: white;
         font-family: 'Merienda', cursive;
-        font-size: 50px;
+        // font-size: 40px;
     }
 }
 .grid{
@@ -31,13 +29,11 @@
         grid-column: 1/1;
         grid-row: 1/2;
         padding: 5px;
-        // background-color: red;
     }
     .code{
         grid-column: 2/2;
         grid-row: 1/2;
         padding: 5px;
-        // background-color: blue;
     }
 }
 .secondary{
@@ -52,7 +48,46 @@
     .school{
         grid-column: 1/1;
         grid-row: 2/3;
-        // background-color: yellow;
+    }
+}
+// responsiveness
+/* for mobile view */
+@media only screen and (min-device-width:1px) and (max-device-width:640px){
+    .navbar{
+        background-color: none;
+        label {
+            color: white;
+        }
+    }
+    h2{
+        font-size: 30px;
+    }
+    .menu{
+        display: none; 
+        position: absolute;
+        width: 35%; 
+        a {
+          padding: 30px;
+          text-decoration: none;
+          color: white;
+          background-color: rgba(0, 0, 0, 0.51);
+          width: 100%;
+          display: block;
+          text-align: center;
+          clear: right;
+        }
+      }
+      #toggle {
+        display: none;
+      }
+      #toggle:checked + .menu {
+        display: block;
+      }  
+      #acc{
+        background-image: url("../images/man.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }
 

@@ -4,7 +4,8 @@
 @import url("https://fonts.googleapis.com/css?family=Merienda");
 @import url("https://fonts.googleapis.com/css?family=Bree+Serif|Merienda");
 .maintable {
-  border: solid 5px; }
+  border: solid 5px;
+  width: 100%; }
   .maintable h1 {
     font-family: 'Merienda', cursive;
     color: white; }
@@ -20,6 +21,44 @@
   background-size: cover;
   background-repeat: no-repeat; }
 
+input {
+  display: none; }
+
+/* for mobile view */
+@media only screen and (min-device-width: 1px) and (max-device-width: 640px) {
+  .navbar {
+    background-color: none; }
+    .navbar label {
+      color: white; }
+
+  .menu {
+    display: none;
+    position: absolute;
+    width: 35%; }
+    .menu a {
+      padding: 30px;
+      text-decoration: none;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.51);
+      width: 100%;
+      display: block;
+      text-align: center;
+      clear: right; }
+
+  #toggle {
+    display: none; }
+
+  #toggle:checked + .menu {
+    display: block; }
+
+  #personal {
+    background-image: url("../images/moon.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+
+  td {
+    font-size: 12px; } }
 #acc {
   background-image: url("../images/man.jpeg");
   background-size: cover;
@@ -28,8 +67,7 @@
   #acc h1, #acc h2 {
     text-align: center;
     color: white;
-    font-family: 'Merienda', cursive;
-    font-size: 50px; }
+    font-family: 'Merienda', cursive; }
 
 .grid ul {
   list-style-type: none; }
@@ -60,6 +98,41 @@
     grid-column: 1/1;
     grid-row: 2/3; }
 
+/* for mobile view */
+@media only screen and (min-device-width: 1px) and (max-device-width: 640px) {
+  .navbar {
+    background-color: none; }
+    .navbar label {
+      color: white; }
+
+  h2 {
+    font-size: 30px; }
+
+  .menu {
+    display: none;
+    position: absolute;
+    width: 35%; }
+    .menu a {
+      padding: 30px;
+      text-decoration: none;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.51);
+      width: 100%;
+      display: block;
+      text-align: center;
+      clear: right; }
+
+  #toggle {
+    display: none; }
+
+  #toggle:checked + .menu {
+    display: block; }
+
+  #acc {
+    background-image: url("../images/man.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; } }
 #work {
   background-image: url("../images/sky.jpeg");
   background-size: cover;
@@ -99,6 +172,44 @@
     grid-column: 3/3;
     grid-row: 2/3; }
 
+/* for mobile view */
+@media only screen and (min-device-width: 1px) and (max-device-width: 640px) {
+  .navbar {
+    background-color: none; }
+    .navbar label {
+      color: white; }
+
+  .menu {
+    display: none;
+    position: absolute;
+    width: 35%; }
+    .menu a {
+      padding: 30px;
+      text-decoration: none;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.51);
+      width: 100%;
+      display: block;
+      text-align: center;
+      clear: right; }
+
+  #toggle {
+    display: none; }
+
+  #toggle:checked + .menu {
+    display: block; }
+
+  .exp {
+    display: inline; }
+    .exp b {
+      text-decoration: underline;
+      font-size: 15px; }
+
+  .reference {
+    display: inline; }
+    .reference b {
+      text-decoration: underline;
+      font-size: 15px; } }
 .proj {
   background-image: url("../images/sky.jpeg");
   background-size: cover;
@@ -136,15 +247,39 @@
     background-color: transparent;
     border: transparent;
     cursor: pointer; }
-  .projects img {
-    border: solid 2px black; }
-    .projects img:hover {
-      width: 300px;
-      height: 300px;
-      -webkit-transition: width 2s;
-      -webkit-transition: height 2s;
-      transition: width 2s; }
 
+/* for mobile view */
+@media only screen and (min-device-width: 1px) and (max-device-width: 640px) {
+  .navbar {
+    background-color: none; }
+    .navbar label {
+      color: white; }
+
+  .menu {
+    display: none;
+    position: absolute;
+    width: 35%; }
+    .menu a {
+      padding: 30px;
+      text-decoration: none;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.51);
+      width: 100%;
+      display: block;
+      text-align: center;
+      clear: right; }
+
+  #toggle {
+    display: none; }
+
+  #toggle:checked + .menu {
+    display: block; }
+
+  img {
+    width: 50%; }
+
+  .projects {
+    display: inline; } }
 .navbar {
   background-color: #000000b0;
   padding: 30px;
@@ -181,16 +316,37 @@
   #home .cover img {
     border: solid black 2px;
     border-radius: 5px; }
+  #home input {
+    display: none; }
 
 /* for mobile view */
 @media only screen and (min-device-width: 1px) and (max-device-width: 640px) {
   .navbar {
-    border-radius: 5px; }
-    .navbar a {
+    background-color: none; }
+    .navbar label {
+      color: white; }
+
+  .menu {
+    display: none;
+    position: absolute;
+    width: 35%; }
+    .menu a {
+      padding: 30px;
+      text-decoration: none;
       color: white;
-      font-family: 'Merienda', cursive;
-      text-decoration: none; }
-      .navbar a:hover {
-        color: yellow; } }
+      background-color: rgba(0, 0, 0, 0.51);
+      width: 100%;
+      display: block;
+      text-align: center;
+      clear: right; }
+
+  #toggle {
+    display: none; }
+
+  #toggle:checked + .menu {
+    display: block; }
+
+  .cover img {
+    width: 50%; } }
 
 /*# sourceMappingURL=style.css.map */
